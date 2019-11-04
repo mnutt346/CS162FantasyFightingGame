@@ -4,6 +4,7 @@
 #include "game.hpp"
 #include "menu.hpp"
 #include "barbarian.hpp"
+#include "vampire.hpp"
 
 using std::cin;
 using std::cout;
@@ -98,6 +99,10 @@ string Game::setPlayer(Character *&player, int playerSelection)
 
     switch (playerSelection)
     {
+    case 1:
+        player = new Vampire;
+        playerType = "Vampire";
+        break;
     case 2:
         player = new Barbarian;
         playerType = "Barbarian";

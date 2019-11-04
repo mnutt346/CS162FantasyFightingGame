@@ -1,19 +1,19 @@
 /**************************************************************************************
-** Program name: barbarian.hpp
+** Program name: vampire.hpp
 ** Author: Michael Nutt
 ** Date: 10/31/2019
-** Description: Declaration and header file for the Barbarian class.
+** Description: Declaration and header file for the Vampire class.
 **************************************************************************************/
-#ifndef BARBARIAN_HPP
-#define BARBARIAN_HPP
+#ifndef VAMPIRE_HPP
+#define vAMPIRE_HPP
 
 #include "character.hpp"
 
-class Barbarian : public Character
+class Vampire : public Character
 {
 private:
 public:
-    Barbarian();
+    Vampire();
     int attack(Character *, int);
     void defend(int, int);
 };

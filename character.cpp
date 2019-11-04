@@ -1,5 +1,5 @@
 /**************************************************************************************
-** Program name: character.hpp
+** Program name: character.cpp
 ** Author: Michael Nutt
 ** Date: 10/31/2019
 ** Description: Implementation file for the Character class.
@@ -13,23 +13,15 @@ using std::cout;
 using std::endl;
 using std::string;
 
-/* Summary: Constructor for the Character class. Initializes
- * the type, attack die count, attack die sides, defense die count,
- * armor, and strength.
+/* Summary: Constructor for the Character class. Initializes the type, armor, and strength.
  * Param: string characterType -> type of character
- * Param: int atkDieCount -> number of attack die used by the character
- * Param: int atkDieSides -> number of sides on the attack die
- * Param: int defDieCount -> number of defense die use by the character
  * Param: int arm -> armor
  * Param: int stren -> strength
  * Return: N/A
  */
-Character::Character(string characterType, int atkDieCount, int atkDieSides, int defDieCount, int arm, int stren)
+Character::Character(string characterType, int arm, int stren)
 {
     this->type = characterType;
-    this->attackDieCount = atkDieCount;
-    this->attackDieSides = atkDieSides;
-    this->defenseDieCount = defDieCount;
     this->armor = arm;
     this->strength = stren;
     this->currentLife = 1;

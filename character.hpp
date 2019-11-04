@@ -13,16 +13,13 @@ class Character
 {
 protected:
     std::string type;
-    int attackDieCount;
-    int attackDieSides;
-    int defenseDieCount;
     int armor;
     int strength;
     int currentLife;
     bool dead;
 
 public:
-    Character(std::string, int, int, int, int, int);
+    Character(std::string, int, int);
     std::string getType();
     int getArmor();
     int getStrength();
