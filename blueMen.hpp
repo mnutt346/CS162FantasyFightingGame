@@ -1,18 +1,18 @@
 /**************************************************************************************
-** Program name: barbarian.hpp
+** Program name: blueMen.hpp
 ** Author: Michael Nutt
 ** Date: 10/31/2019
-** Description: Declaration and header file for the Barbarian class.
+** Description: Declaration and header file for the BlueMen class.
 **************************************************************************************/
-#ifndef BARBARIAN_HPP
-#define BARBARIAN_HPP
-
 #include "character.hpp"
 
-class Barbarian : public Character
+#ifndef BLUEMEN_HPP
+#define BLUEMEN_HPP
+
+class BlueMen : public Character
 {
 public:
-    Barbarian();
+    BlueMen();
     int attack(Character *, int);
     void defend(int, int);
 };

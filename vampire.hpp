@@ -11,7 +11,6 @@
 
 class Vampire : public Character
 {
-private:
 public:
     Vampire();
     int attack(Character *, int);

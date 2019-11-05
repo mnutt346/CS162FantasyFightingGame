@@ -5,6 +5,7 @@
 #include "menu.hpp"
 #include "barbarian.hpp"
 #include "vampire.hpp"
+#include "blueMen.hpp"
 
 using std::cin;
 using std::cout;
@@ -106,6 +107,10 @@ string Game::setPlayer(Character *&player, int playerSelection)
     case 2:
         player = new Barbarian;
         playerType = "Barbarian";
+        break;
+    case 3:
+        player = new BlueMen;
+        playerType = "Blue Men";
         break;
     default:
         break;

@@ -13,9 +13,8 @@
 using std::cout;
 using std::endl;
 
-/* Summary: Default constructor for Vampire class. Initializes
- * the type, attack die count, attack die sides, defense die count,
- * armor, and strength. Inherits from the Character base class.
+/* Summary: Default constructor for Vampire class. Initializes the type, armor, and 
+ * strength. Inherits from the Character base class.
  * Param: N/A
  * Return: N/A
  */
