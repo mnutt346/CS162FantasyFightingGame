@@ -33,6 +33,11 @@ int BlueMen::attack(Character *opponent, int playerNum)
     return damage;
 }
 
+/* Summary: Defend function for the BlueMen class.
+ * Param: int damage -> represents the amount of damage dealt to the defender
+ * Param: int playerNum -> represents the defending player
+ * Return: N/A
+ */
 void BlueMen::defend(int damage, int playerNum)
 {
     int currentStrength = this->getStrength();
