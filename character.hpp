@@ -23,10 +23,10 @@ public:
     std::string getType();
     int getArmor();
     int getStrength();
-    int getLife();
     void setStrength(int);
     virtual int attack(Character *, int) = 0;
     virtual void defend(int, int) = 0;
+    void takeDamage(int);
     int rollAttack(int, int);
     int rollDefense(int);
     void roundLost();

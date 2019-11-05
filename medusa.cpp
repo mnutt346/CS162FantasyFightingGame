@@ -51,6 +51,9 @@ void Medusa::defend(int damage, int playerNum)
     // Get random roll
     int defense = this->rollDefense(2);
 
+    // Add player's armor to total defense
+    defense += this->getArmor();
+
     cout << (playerNum == 1 ? "Player 1" : "Player 2") << " rolled a defense of " << defense << "!" << endl;
 
     // If the defense roll is greater than the damage dealt
@@ -65,7 +68,7 @@ void Medusa::defend(int damage, int playerNum)
         cout << (playerNum == 1 ? "Player 1" : "Player 2") << " took damage of " << inflictedDamage << "!" << endl;
 
         // Reduce player's strength by the actual damage inflicted
-        this->setStrength(inflictedDamage);
+        this->takeDamage(inflictedDamage);
 
         cout << (playerNum == 1 ? "Player 1" : "Player 2") << "'s current strength is now " << this->getStrength() << "." << endl;
     }

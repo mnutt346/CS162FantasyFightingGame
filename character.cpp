@@ -43,12 +43,12 @@ int Character::getStrength()
     return strength;
 }
 
-int Character::getLife()
+void Character::setStrength(int newStrength)
 {
-    return currentLife;
+    strength = newStrength;
 }
 
-void Character::setStrength(int damage)
+void Character::takeDamage(int damage)
 {
     strength -= damage;
 }

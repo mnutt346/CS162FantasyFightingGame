@@ -7,6 +7,7 @@
 #include "vampire.hpp"
 #include "blueMen.hpp"
 #include "medusa.hpp"
+#include "harryPotter.hpp"
 
 using std::cin;
 using std::cout;
@@ -116,6 +117,10 @@ string Game::setPlayer(Character *&player, int playerSelection)
     case 4:
         player = new Medusa;
         playerType = "Medusa";
+        break;
+    case 5:
+        player = new HarryPotter;
+        playerType = "Harry Potter";
         break;
     default:
         break;

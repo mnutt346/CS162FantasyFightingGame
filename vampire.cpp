@@ -67,7 +67,7 @@ void Vampire::defend(int damage, int playerNum)
             cout << (playerNum == 1 ? "Player 1" : "Player 2") << " took damage of " << inflictedDamage << "!" << endl;
 
             // Reduce player's strength by the actual damage inflicted
-            this->setStrength(inflictedDamage);
+            this->takeDamage(inflictedDamage);
 
             cout << (playerNum == 1 ? "Player 1" : "Player 2") << "'s current strength is now " << this->getStrength() << "." << endl;
         }
