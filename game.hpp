@@ -17,6 +17,8 @@ public:
     void playGame();
     bool allAlive();
     void fight();
+    void driver();
+    void deallocateMem();
 };
 
 #endif

@@ -35,6 +35,7 @@ void Game::playGame()
     if (!programSelection)
     {
         cout << "Exiting program..." << endl;
+        deallocateMem();
         exit(0);
     }
 
@@ -68,6 +69,8 @@ void Game::playGame()
                  << "Press enter continue." << endl;
             cin.get();
         } while (allAlive());
+
+        deallocateMem();
 
         programSelection = startMenu(TITLE);
     }
@@ -165,4 +168,10 @@ void Game::fight()
                  << "***** Player 1 has died! Player 2 wins! *****" << endl;
         }
     }
+}
+
+void Game::deallocateMem()
+{
+    delete player1;
+    delete player2;
 }
